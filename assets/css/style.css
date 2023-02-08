@@ -45,17 +45,17 @@ img {
   display: flex;
 }
 
-.p-1 {
+.vp-1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.m-1 {
+.vm-1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.m-5px {
+.vm-5px {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -90,6 +90,11 @@ img {
 #app_header .logo > img {
   width: unset;
   height: 30px;
+  /* USED TO CENTER THE LOGO SINCE IT WAS NOT WITH FLEX, BECAUSE OF LEFT SECTION BIGGER THAN THE RIGHT ONE */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* #endregion Header */
@@ -102,7 +107,7 @@ img {
 
 #app_main .d-flex {
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -178,6 +183,35 @@ img {
 
 /* #region Footer */
 
+#app_footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
 
+#app_footer > .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app_footer h4 {
+  font-size: 1.2rem;
+}
+
+#app_footer ul {
+  gap: 1rem;
+}
+
+#app_footer a {
+  color: var(--light);
+  font-size: 0.875rem;
+}
+
+#app_footer .footer_right h6 {
+  font-size: 0.875rem;
+}
+
+#app_footer .social_icons a:nth-child(even) {
+  margin: 0 1rem;
+}
 
 /* #endregion Footer */
