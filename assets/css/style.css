@@ -88,6 +88,10 @@ img {
   font-weight: 700;
 }
 
+#app_header .container a:hover {
+  color: var(--dark);
+}
+
 #app_header .logo > img {
   width: unset;
   height: 30px;
@@ -114,8 +118,14 @@ img {
 }
 
 #app_main .card {
+  padding: 5px;
   width: calc((100% / 12 * 4) - (2rem / 3));
+  border-radius: 5px;
+}
+
+#app_main .card:hover {
   cursor: pointer;
+  box-shadow: 0 0 10px 2px var(--primary);
 }
 
 #app_main .card:hover .secondary_img {
@@ -205,6 +215,10 @@ img {
 #app_footer a {
   color: var(--light);
   font-size: 0.875rem;
+}
+
+#app_footer a:hover {
+  color: var(--primary);
 }
 
 #app_footer .footer_right h6 {
