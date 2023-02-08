@@ -55,6 +55,11 @@ img {
   margin-bottom: 1rem;
 }
 
+.m-5px {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 /* #endregion Utility */
 
 /* #region Header */
@@ -137,6 +142,20 @@ img {
 
 #app_main .card .badge > .feature {
   background-color: var(--green);
+}
+
+#app_main .card .brand {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+#app_main .card .discounted_price {
+  color: var(--red);
+  font-weight: 600;
+}
+
+#app_main .card .full_price {
+  text-decoration: line-through;
 }
 
 /* #endregion Main */
