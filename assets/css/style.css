@@ -114,18 +114,21 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2.5rem;
+  margin: 6rem auto 3rem;
 }
 
 #app_main .card {
   padding: 5px;
-  width: calc((100% / 12 * 4) - (2rem / 3));
+  width: calc((100% / 12 * 4) - (5rem / 3));
   border-radius: 5px;
+  transform: skew(3deg, 3deg);
+  box-shadow: -30px 30px 50px 0 var(--dark);
 }
 
 #app_main .card:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px 2px var(--primary);
+  box-shadow: -30px 30px 50px 0 var(--primary);
 }
 
 #app_main .card:hover .secondary_img {
@@ -234,7 +237,7 @@ img {
 @media (orientation: portrait) {
 
   .container {
-    width: 90%;
+    width: 80%;
   }
 
   /* #region Header */
