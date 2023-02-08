@@ -109,10 +109,26 @@ img {
 
 #app_main .card {
   width: calc((100% / 12 * 4) - (2rem / 3));
+  cursor: pointer;
+}
+
+#app_main .card:hover .secondary_img {
+  display: block;
+}
+
+#app_main .card i:hover {
+  color: var(--red);
 }
 
 #app_main .image-wrapper {
   position: relative;
+}
+
+#app_main .image-wrapper .secondary_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 #app_main .card i {
