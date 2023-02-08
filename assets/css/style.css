@@ -1,5 +1,96 @@
+/* #region Common */
+
+:root {
+  --primary: #ff6900;
+  --light: #ffffff;
+  --dark: #1a1a1a;
+  --red: #ff0000;
+  --green: #008000;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* #endregion Common */
+
+/* #region Utility */
+
+.container {
+  width: 70%;
+  max-width: 1152px;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.p-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* #endregion Utility */
+
+/* #region Header */
+
+#app_header {
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#app_header .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app_header .container ul {
+  gap: 1rem;
+}
+
+#app_header .container a {
+  color: var(--light);
+  font-weight: 700;
+}
+
+#app_header .logo > img {
+  width: unset;
+  height: 30px;
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+
+
+/* #endregion Main */
+
+/* #region Footer */
+
+
+
+/* #endregion Footer */
