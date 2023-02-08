@@ -50,6 +50,11 @@ img {
   padding-bottom: 1rem;
 }
 
+.m-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* #endregion Utility */
 
 /* #region Header */
@@ -60,6 +65,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 #app_header .d-flex {
@@ -85,7 +91,53 @@ img {
 
 /* #region Main */
 
+#app_main {
+  margin-top: 70px;
+}
 
+#app_main .d-flex {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#app_main .card {
+  width: calc((100% / 12 * 4) - (2rem / 3));
+}
+
+#app_main .image-wrapper {
+  position: relative;
+}
+
+#app_main .card i {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  padding: 1rem;
+  background-color: var(--light);
+}
+
+#app_main .card .badge {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  color: var(--light);
+}
+
+#app_main .card .badge > .discount,
+#app_main .card .badge > .feature {
+  padding: 0.3rem 0.5rem;
+}
+
+
+#app_main .card .badge > .discount {
+  background-color: var(--red);
+}
+
+#app_main .card .badge > .feature {
+  background-color: var(--green);
+}
 
 /* #endregion Main */
 
