@@ -1,1 +1,1 @@
-# A Zaalando style page with a 3D effect on the items #
+# A Zalando style page with a 3D effect on the items #
